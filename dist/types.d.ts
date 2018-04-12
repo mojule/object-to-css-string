@@ -1,6 +1,3 @@
-export interface ICssProperties {
-    [property: string]: string | number;
-}
-export interface ICssRulesets {
-    [selector: string]: ICssProperties;
+export interface CssObject {
+    [name: string]: string | number | null | CssObject;
 }

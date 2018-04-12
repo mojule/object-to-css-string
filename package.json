@@ -1,8 +1,9 @@
 {
   "name": "@mojule/object-to-css-string",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Turns a style object into a CSS string",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "mocha",
     "coverage": "nyc --reporter=html --reporter=text mocha"
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/mojule/object-to-css-string#readme",
   "dependencies": {
+    "@mojule/is": "^0.3.6",
     "lodash.kebabcase": "^4.1.1"
   },
   "devDependencies": {

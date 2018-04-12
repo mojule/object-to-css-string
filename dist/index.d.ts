@@ -1,3 +1,3 @@
-import { ICssRulesets } from './types';
-declare const CssString: (styles: ICssRulesets) => string;
+import { CssObject } from './types';
+declare const CssString: (styles: CssObject) => string;
 export = CssString;

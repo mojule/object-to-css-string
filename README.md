@@ -13,4 +13,22 @@ const style = {
 }
 
 console.log( CssString( style ) )
+
+const complexStyle = {
+  '@import url( "other.css" )': null,
+  '.foo .bar': {
+    textSize: '1rem',
+    margin: 0
+  },
+  '@supports (display: flex)': {
+    '@media screen and (min-width: 900px)': {
+      '.foo .bar': {
+        textSize: '1.25rem',
+        margin: 0
+      }
+    }
+  }
+}
+
+console.log( CssString( complexStyle ) )
 ```
